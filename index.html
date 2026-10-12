@@ -14,20 +14,21 @@
   <meta property="og:description" content="3D walkthroughs and renders that help your clients say yes. Premium architectural visualisation from Bangalore.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://zien3d.onrender.com">
-  <meta property="og:image" content="https://zien3d.onrender.com/assets/og-image.jpg">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&h=630&q=80">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Zien 3D — 3D Architectural Visualisation Studio">
   <meta name="twitter:description" content="Premium 3D walkthroughs and renders for architects and builders.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&h=630&q=80">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏛</text></svg>">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23c9a84c'/><text x='50' y='70' font-family='serif' font-weight='bold' font-size='60' text-anchor='middle' fill='%230a0a0a'>Z</text></svg>">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 
@@ -70,11 +71,11 @@
   <!-- NAV -->
   <nav class="nav" id="nav">
     <div class="nav__inner container">
-      <a href="#hero" class="nav__brand">
+      <a href="#hero" class="nav__brand" aria-label="Zien 3D Home">
         <span class="nav__logo">Z</span>
         <span class="nav__name">Zien <span class="nav__name-accent">3D</span></span>
       </a>
-      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav__links" id="navLinks">
@@ -82,26 +83,32 @@
         <li><a href="#work">Work</a></li>
         <li><a href="#process">Process</a></li>
         <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#audience">Who It's For</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#contact" class="btn btn--sm btn--accent">Get a Quote</a></li>
       </ul>
     </div>
   </nav>
 
+  <!-- Mobile Drawer Backdrop -->
+  <div class="nav__backdrop" id="navBackdrop" aria-hidden="true"></div>
+
   <!-- HERO -->
   <section class="hero" id="hero">
     <div class="hero__video-wrap">
-      <video class="hero__video" autoplay muted loop playsinline poster="assets/hero-poster.jpg">
+      <video class="hero__video" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80">
         <source src="assets/hero-reel.mp4" type="video/mp4">
+        <source src="https://assets.mixkit.co/videos/preview/mixkit-modern-apartment-architectural-design-41484-large.mp4" type="video/mp4">
       </video>
       <div class="hero__overlay"></div>
     </div>
     <div class="hero__content container">
-      <p class="hero__label reveal">Zien 3D — Architectural Visualisation Studio</p>
+      <p class="hero__label reveal">Zien 3D — Architectural Visualisation Studio · Bangalore</p>
       <h1 class="hero__title reveal">
         3D walkthroughs and renders<br>
         that help your clients <em>say&nbsp;yes.</em>
       </h1>
-      <p class="hero__sub reveal">Photorealistic exteriors, interiors, and walkthrough videos — delivered fast.</p>
+      <p class="hero__sub reveal">Photorealistic exterior views, immersive luxury interiors, and cinematic walkthrough videos engineered to close architectural proposals and builder sales.</p>
       <div class="hero__cta reveal">
         <a href="#contact" class="btn btn--accent btn--lg">Get a Free Sample</a>
         <a href="https://wa.me/918971027214?text=Hi%20Zien%203D%2C%20I%27d%20like%20to%20know%20more%20about%20your%20services." class="btn btn--outline btn--lg" target="_blank" rel="noopener">
@@ -110,7 +117,7 @@
         </a>
       </div>
     </div>
-    <a href="#services" class="hero__scroll" aria-label="Scroll down">
+    <a href="#services" class="hero__scroll" aria-label="Scroll down to services">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 13l5 5 5-5M7 6l5 5 5-5"/></svg>
     </a>
   </section>
@@ -119,35 +126,35 @@
   <section class="section services" id="services">
     <div class="container">
       <p class="section__label reveal">What We Do</p>
-      <h2 class="section__title reveal">Services</h2>
+      <h2 class="section__title reveal">Visualisation Services</h2>
       <div class="services__grid">
         <div class="service-card reveal">
           <div class="service-card__icon">
             <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="8" width="40" height="28" rx="3"/><path d="M4 36l16-12 8 6 16-14"/><circle cx="34" cy="16" r="3"/></svg>
           </div>
-          <h3 class="service-card__title">Exterior Renders</h3>
-          <p class="service-card__text">Photorealistic day and dusk views that make facades and landscapes come alive.</p>
+          <h3 class="service-card__title">3D Exterior Renders</h3>
+          <p class="service-card__text">Photorealistic day and dusk views with accurate sunlight, materiality, and landscaping that bring facades to life.</p>
         </div>
         <div class="service-card reveal">
           <div class="service-card__icon">
             <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="6" width="36" height="36" rx="3"/><path d="M6 24h36M24 6v36"/><path d="M14 14h6v6h-6zM28 14h6v6h-6zM14 28h6v6h-6zM28 28h6v6h-6z"/></svg>
           </div>
-          <h3 class="service-card__title">Interior Renders</h3>
-          <p class="service-card__text">Warm, detailed interiors that let clients feel the space before it's built.</p>
+          <h3 class="service-card__title">3D Interior Renders</h3>
+          <p class="service-card__text">Warm, tactile interior scenes with realistic textures and lighting that let clients experience the space before construction.</p>
         </div>
         <div class="service-card reveal">
           <div class="service-card__icon">
             <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><polygon points="18,12 36,24 18,36"/><rect x="4" y="6" width="40" height="36" rx="4"/></svg>
           </div>
           <h3 class="service-card__title">Walkthrough Videos</h3>
-          <p class="service-card__text">Cinematic camera paths through your design — perfect for client presentations.</p>
+          <p class="service-card__text">Cinematic camera choreography and lighting transitions through your architecture — built to captivate buyers.</p>
         </div>
         <div class="service-card reveal">
           <div class="service-card__icon">
             <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><circle cx="24" cy="24" r="18"/><ellipse cx="24" cy="24" rx="8" ry="18"/><path d="M6 24h36"/></svg>
           </div>
           <h3 class="service-card__title">360° Virtual Views</h3>
-          <p class="service-card__text">Interactive panoramas your clients can explore on any device, anytime.</p>
+          <p class="service-card__text">Seamless panoramic views that clients can rotate and explore across mobile, tablet, and desktop without installing apps.</p>
         </div>
       </div>
     </div>
@@ -156,63 +163,90 @@
   <!-- WORK -->
   <section class="section section--alt work" id="work">
     <div class="container">
-      <p class="section__label reveal">Portfolio</p>
-      <h2 class="section__title reveal">Selected Work</h2>
+      <div class="section__header reveal">
+        <p class="section__label">Portfolio</p>
+        <h2 class="section__title">Selected Work</h2>
+        <p class="section__subtitle">Click any card below to launch full visual details &amp; high-resolution preview.</p>
+      </div>
       <div class="work__grid">
-        <div class="work-card reveal" data-video="assets/work-01.mp4">
+        <div class="work-card reveal" data-title="Modern Villa — Day Exterior" data-image="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1600&q=80" data-video="assets/work-01.mp4">
           <div class="work-card__media">
-            <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=600&h=400&fit=crop" alt="Modern villa exterior render" loading="lazy">
-            <div class="work-card__play"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="8,5 19,12 8,19"/></svg></div>
+            <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&h=540&q=80" alt="Modern villa exterior render" loading="lazy">
+            <div class="work-card__play">
+              <span class="work-card__play-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="8,5 19,12 8,19"/></svg>
+              </span>
+            </div>
           </div>
           <div class="work-card__info">
             <h3>Modern Villa — Exterior</h3>
             <span class="work-card__tag">Zien concept visualisation</span>
           </div>
         </div>
-        <div class="work-card reveal" data-video="assets/work-02.mp4">
+        <div class="work-card reveal" data-title="Luxury Residence — Dusk Lighting" data-image="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80" data-video="assets/work-02.mp4">
           <div class="work-card__media">
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop" alt="Luxury home dusk render" loading="lazy">
-            <div class="work-card__play"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="8,5 19,12 8,19"/></svg></div>
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&h=540&q=80" alt="Luxury home dusk render" loading="lazy">
+            <div class="work-card__play">
+              <span class="work-card__play-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="8,5 19,12 8,19"/></svg>
+              </span>
+            </div>
           </div>
           <div class="work-card__info">
             <h3>Luxury Residence — Dusk</h3>
             <span class="work-card__tag">Zien concept visualisation</span>
           </div>
         </div>
-        <div class="work-card reveal" data-video="assets/work-03.mp4">
+        <div class="work-card reveal" data-title="Contemporary Living Room — Warm Interior" data-image="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1600&q=80" data-video="assets/work-03.mp4">
           <div class="work-card__media">
-            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=600&h=400&fit=crop" alt="Living room interior render" loading="lazy">
-            <div class="work-card__play"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="8,5 19,12 8,19"/></svg></div>
+            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&h=540&q=80" alt="Living room interior render" loading="lazy">
+            <div class="work-card__play">
+              <span class="work-card__play-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="8,5 19,12 8,19"/></svg>
+              </span>
+            </div>
           </div>
           <div class="work-card__info">
             <h3>Contemporary Living Room</h3>
             <span class="work-card__tag">Zien concept visualisation</span>
           </div>
         </div>
-        <div class="work-card reveal" data-video="assets/work-04.mp4">
+        <div class="work-card reveal" data-title="Modular Kitchen — High-End Materials" data-image="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=80" data-video="assets/work-04.mp4">
           <div class="work-card__media">
-            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&h=400&fit=crop" alt="Kitchen interior render" loading="lazy">
-            <div class="work-card__play"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="8,5 19,12 8,19"/></svg></div>
+            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&h=540&q=80" alt="Kitchen interior render" loading="lazy">
+            <div class="work-card__play">
+              <span class="work-card__play-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="8,5 19,12 8,19"/></svg>
+              </span>
+            </div>
           </div>
           <div class="work-card__info">
             <h3>Modular Kitchen Design</h3>
             <span class="work-card__tag">Zien concept visualisation</span>
           </div>
         </div>
-        <div class="work-card reveal" data-video="assets/work-05.mp4">
+        <div class="work-card reveal" data-title="Commercial Space — Walkthrough Concept" data-image="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=80" data-video="assets/work-05.mp4">
           <div class="work-card__media">
-            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&h=400&fit=crop" alt="Commercial space walkthrough" loading="lazy">
-            <div class="work-card__play"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="8,5 19,12 8,19"/></svg></div>
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&h=540&q=80" alt="Commercial space walkthrough" loading="lazy">
+            <div class="work-card__play">
+              <span class="work-card__play-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="8,5 19,12 8,19"/></svg>
+              </span>
+            </div>
           </div>
           <div class="work-card__info">
             <h3>Commercial Walkthrough</h3>
             <span class="work-card__tag">Zien concept visualisation</span>
           </div>
         </div>
-        <div class="work-card reveal" data-video="assets/work-06.mp4">
+        <div class="work-card reveal" data-title="Apartment Complex — Master Aerial View" data-image="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1600&q=80" data-video="assets/work-06.mp4">
           <div class="work-card__media">
-            <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600&h=400&fit=crop" alt="Apartment complex aerial render" loading="lazy">
-            <div class="work-card__play"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="8,5 19,12 8,19"/></svg></div>
+            <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&h=540&q=80" alt="Apartment complex aerial render" loading="lazy">
+            <div class="work-card__play">
+              <span class="work-card__play-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="8,5 19,12 8,19"/></svg>
+              </span>
+            </div>
           </div>
           <div class="work-card__info">
             <h3>Apartment Complex — Aerial</h3>
@@ -227,38 +261,46 @@
   <section class="section process" id="process">
     <div class="container">
       <p class="section__label reveal">How It Works</p>
-      <h2 class="section__title reveal">Our Process</h2>
+      <h2 class="section__title reveal">Our 4-Step Process</h2>
       <div class="process__timeline">
         <div class="process-step reveal">
-          <div class="process-step__num">01</div>
-          <div class="process-step__body">
-            <h3>Share Your Plans</h3>
-            <p>Send us your floor plans, elevations, or 3D models. We'll review and set expectations.</p>
+          <div class="process-step__header">
+            <span class="process-step__badge">01</span>
             <span class="process-step__time">Day 1</span>
           </div>
+          <div class="process-step__body">
+            <h3>Share Your Plans</h3>
+            <p>Send your CAD drawings, BIM/Revit models, sketches, or mood boards. We evaluate the geometry and confirm deliverables immediately.</p>
+          </div>
         </div>
         <div class="process-step reveal">
-          <div class="process-step__num">02</div>
-          <div class="process-step__body">
-            <h3>Concept Preview</h3>
-            <p>We create the first draft — camera angles, materials, lighting — for your feedback.</p>
+          <div class="process-step__header">
+            <span class="process-step__badge">02</span>
             <span class="process-step__time">Day 3–5</span>
           </div>
-        </div>
-        <div class="process-step reveal">
-          <div class="process-step__num">03</div>
           <div class="process-step__body">
-            <h3>One Revision Round</h3>
-            <p>Adjust colours, finishes, or furnishing based on your notes. One round included free.</p>
-            <span class="process-step__time">Day 5–7</span>
+            <h3>Concept Preview</h3>
+            <p>We deliver an initial lighting, camera composition, and materiality draft for your review to align creative direction.</p>
           </div>
         </div>
         <div class="process-step reveal">
-          <div class="process-step__num">04</div>
+          <div class="process-step__header">
+            <span class="process-step__badge">03</span>
+            <span class="process-step__time">Day 5–7</span>
+          </div>
+          <div class="process-step__body">
+            <h3>One Revision Round</h3>
+            <p>Fine-tune colors, lighting temperatures, landscaping, or fixtures based on client comments. One dedicated refinement round is included free.</p>
+          </div>
+        </div>
+        <div class="process-step reveal">
+          <div class="process-step__header">
+            <span class="process-step__badge">04</span>
+            <span class="process-step__time">Day 7–10</span>
+          </div>
           <div class="process-step__body">
             <h3>Final Delivery</h3>
-            <p>High-resolution renders or video files delivered via Google Drive, ready to present.</p>
-            <span class="process-step__time">Day 7–10</span>
+            <p>Production 4K Ultra-HD renders and high-bitrate video files delivered securely via Google Drive, fully ready for pitches and marketing.</p>
           </div>
         </div>
       </div>
@@ -272,17 +314,31 @@
       <h2 class="section__title reveal">First-Project Pilot Pricing</h2>
       <div class="pricing__card reveal">
         <div class="pricing__card-inner">
-          <div class="pricing__badge">Pilot Offer</div>
-          <h3 class="pricing__headline">Try us with zero risk</h3>
-          <p class="pricing__desc">We offer special introductory pricing on your first project so you can experience our quality and turnaround before committing long-term.</p>
+          <div class="pricing__badge">Exclusive Pilot Offer</div>
+          <h3 class="pricing__headline">Try Zien 3D with Zero Risk</h3>
+          <p class="pricing__desc">
+            We offer preferential introductory pricing on your studio's first visualisation project so you can witness our render fidelity and speed before deciding on continuous engagements.
+          </p>
           <ul class="pricing__perks">
-            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>Discounted pilot rate</li>
-            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>One revision included</li>
-            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>7–10 day delivery</li>
-            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>No long-term commitment</li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+              <span><strong>Discounted pilot rate</strong> for new clients</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+              <span><strong>One revision round included</strong> free of charge</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+              <span><strong>7–10 business days</strong> standard delivery</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+              <span><strong>No lock-in or long-term commitment</strong> required</span>
+            </li>
           </ul>
-          <p class="pricing__note">Pricing varies by project scope. <strong>Ask us for a custom quote.</strong></p>
-          <a href="#contact" class="btn btn--accent btn--lg btn--full">Request a Quote</a>
+          <p class="pricing__note">Pricing is customized to your project scope and square footage. <strong>Ask us for a quick custom estimate.</strong></p>
+          <a href="#contact" class="btn btn--accent btn--lg btn--full">Request a Pilot Quote</a>
         </div>
       </div>
     </div>
@@ -295,24 +351,24 @@
       <h2 class="section__title reveal">Who It's For</h2>
       <div class="audience__grid">
         <div class="audience-card reveal">
-          <div class="audience-card__icon">🏗️</div>
+          <div class="audience-card__icon">🏛️</div>
           <h3>Architects</h3>
-          <p>Present proposals that win approvals — fast.</p>
+          <p>Present competitive design proposals that win client approvals and municipal sanctioning faster.</p>
         </div>
         <div class="audience-card reveal">
           <div class="audience-card__icon">🎨</div>
           <h3>Interior Studios</h3>
-          <p>Show clients the exact look and feel before execution.</p>
+          <p>Help homeowners envision precise bespoke furniture, lighting, and materiality prior to contractor execution.</p>
         </div>
         <div class="audience-card reveal">
           <div class="audience-card__icon">🏢</div>
-          <h3>Builders & Developers</h3>
-          <p>Sell units off-plan with stunning marketing visuals.</p>
+          <h3>Builders &amp; Developers</h3>
+          <p>Drive off-plan residential and commercial sales with high-converting marketing visuals and hoardings.</p>
         </div>
         <div class="audience-card reveal">
           <div class="audience-card__icon">🍳</div>
           <h3>Kitchen Showrooms</h3>
-          <p>Let buyers visualise their custom kitchen in 3D.</p>
+          <p>Enable buyers to preview modular cabinets, stone countertops, and hardware configurations in full 3D.</p>
         </div>
       </div>
     </div>
@@ -323,15 +379,20 @@
     <div class="container">
       <div class="about__inner reveal">
         <div class="about__photo">
-          <div class="about__photo-placeholder"><span>EBS</span></div>
+          <div class="about__photo-placeholder">
+            <span class="about__photo-initials">EBS</span>
+            <span class="about__photo-sub">Founder</span>
+          </div>
         </div>
         <div class="about__text">
-          <p class="section__label">About</p>
+          <p class="section__label">About the Studio</p>
           <h2 class="section__title">Meet the Founder</h2>
           <h3 class="about__name">Ekanth B S</h3>
-          <p class="about__role">Founder, Zien 3D · Bangalore</p>
-          <p class="about__bio">Zien 3D is part of <strong>Zien Organisation</strong>, driven by a belief that great design deserves great presentation. We combine architectural understanding with visualisation craft to deliver renders and walkthroughs that close deals and inspire confidence.</p>
-          <a href="#contact" class="btn btn--accent">Let's Talk</a>
+          <p class="about__role">Founder, Zien 3D · Bangalore, India</p>
+          <p class="about__bio">
+            Zien 3D is a specialized division under <strong>Zien Organisation</strong>. We believe that ambitious architecture deserves visualization of equal caliber. Our Bangalore studio unites architectural comprehension with cutting-edge CG rendering to craft visuals that close contracts, inspire trust, and eliminate client hesitation.
+          </p>
+          <a href="#contact" class="btn btn--accent">Let's Discuss Your Project</a>
         </div>
       </div>
     </div>
@@ -341,46 +402,54 @@
   <section class="section contact" id="contact">
     <div class="container">
       <p class="section__label reveal">Get in Touch</p>
-      <h2 class="section__title reveal">Start Your Project</h2>
+      <h2 class="section__title reveal">Start Your Visualisation Project</h2>
       <div class="contact__grid">
-        <form class="contact__form reveal" id="contactForm" action="https://formsubmit.co/contact@zienorganisation.online" method="POST">
-          <input type="hidden" name="_subject" value="New enquiry from Zien 3D website">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_next" value="#">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your full name" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="you@example.com" required>
-          </div>
-          <div class="form-group">
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone" name="phone" placeholder="+91 89710 27214">
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" placeholder="Tell us about your project…" required></textarea>
-          </div>
-          <button type="submit" class="btn btn--accent btn--lg btn--full">Send Message</button>
-        </form>
+        <div class="contact__form-wrap reveal">
+          <form class="contact__form" id="contactForm" action="https://formsubmit.co/contact@zienorganisation.online" method="POST">
+            <input type="hidden" name="_subject" value="New enquiry from Zien 3D website">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="E.g., Priya Sharma" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@studio.com" required autocomplete="email">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 89710 27214" autocomplete="tel">
+            </div>
+            <div class="form-group">
+              <label for="message">Project Details</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us about your project type (villa, apartment, interior) and timeline…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--accent btn--lg btn--full" id="submitBtn">
+              <span>Send Message</span>
+            </button>
+          </form>
+          <div class="form-feedback" id="formFeedback" role="alert" style="display: none;"></div>
+        </div>
+
         <div class="contact__info reveal">
           <div class="contact__info-card">
-            <h3>Prefer a quick chat?</h3>
-            <p>Reach out on WhatsApp and we'll respond within a few hours.</p>
+            <h3>Prefer an instant response?</h3>
+            <p>Reach out directly to our principal via WhatsApp for project estimates and immediate availability.</p>
             <a href="https://wa.me/918971027214?text=Hi%20Zien%203D%2C%20I%27d%20like%20to%20discuss%20a%20project." class="btn btn--whatsapp btn--lg btn--full" target="_blank" rel="noopener">
               <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.555 4.121 1.523 5.855L0 24l6.335-1.652A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75c-1.883 0-3.627-.534-5.119-1.445l-.367-.22-3.759.98.997-3.648-.24-.382A9.696 9.696 0 012.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75z"/></svg>
               Chat on WhatsApp
             </a>
           </div>
           <div class="contact__info-card">
-            <h3>Email us</h3>
+            <h3>Direct Email</h3>
             <a href="mailto:contact@zienorganisation.online" class="contact__email">contact@zienorganisation.online</a>
+            <p class="contact__subtext">We review and respond to inquiries within 12 hours.</p>
           </div>
           <div class="contact__info-card">
-            <h3>Studio</h3>
-            <p>Bangalore, Karnataka, India</p>
+            <h3>Studio Location</h3>
+            <p><strong>Zien 3D</strong> · Bangalore, Karnataka, India</p>
+            <p class="contact__subtext">Serving architects and builders nationally and worldwide.</p>
           </div>
         </div>
       </div>
@@ -395,29 +464,44 @@
           <span class="nav__logo">Z</span>
           <div>
             <strong>Zien Organisation</strong>
-            <p>Arsikere, Hassan, Karnataka</p>
+            <p>Arsikere, Hassan, Karnataka, India</p>
           </div>
         </div>
         <div class="footer__links">
           <a href="#services">Services</a>
           <a href="#work">Work</a>
           <a href="#process">Process</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#about">About</a>
           <a href="#contact">Contact</a>
         </div>
-        <p class="footer__copy">&copy; 2026 Zien Organisation. All rights reserved.</p>
+        <p class="footer__copy">&copy; 2026 Zien Organisation. All rights reserved. Architectural 3D Rendering Studio.</p>
       </div>
     </div>
   </footer>
 
   <!-- STICKY WHATSAPP (MOBILE) -->
-  <a href="https://wa.me/918971027214?text=Hi%20Zien%203D%2C%20I%27m%20interested%20in%20your%20services." class="whatsapp-sticky" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <a href="https://wa.me/918971027214?text=Hi%20Zien%203D%2C%20I%27m%20interested%20in%20your%20services." class="whatsapp-sticky" target="_blank" rel="noopener" aria-label="Chat on WhatsApp with Zien 3D">
     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.555 4.121 1.523 5.855L0 24l6.335-1.652A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75c-1.883 0-3.627-.534-5.119-1.445l-.367-.22-3.759.98.997-3.648-.24-.382A9.696 9.696 0 012.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75z"/></svg>
   </a>
 
-  <!-- LIGHTBOX -->
-  <div class="lightbox" id="lightbox">
-    <button class="lightbox__close" aria-label="Close">&times;</button>
-    <video class="lightbox__video" controls></video>
+  <!-- LIGHTBOX MODAL -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualisation Preview">
+    <div class="lightbox__backdrop"></div>
+    <div class="lightbox__container">
+      <button class="lightbox__close" aria-label="Close preview">&times;</button>
+      <div class="lightbox__media-wrap">
+        <video class="lightbox__video" controls playsinline></video>
+        <img class="lightbox__img" alt="Visualisation render full preview" loading="lazy">
+      </div>
+      <div class="lightbox__caption">
+        <div class="lightbox__caption-info">
+          <h3 class="lightbox__title">Project Visualisation</h3>
+          <span class="lightbox__tag">Zien concept visualisation · 4K Render</span>
+        </div>
+        <a href="https://wa.me/918971027214?text=Hi%20Zien%203D%2C%20I%20saw%20your%20work%20and%20want%20to%20request%20a%20sample%20walkthrough." class="btn btn--sm btn--accent" target="_blank" rel="noopener">Request Walkthrough</a>
+      </div>
+    </div>
   </div>
 
   <script src="script.js"></script>
